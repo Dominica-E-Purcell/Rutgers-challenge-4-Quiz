@@ -1,0 +1,24 @@
+:root {
+    --abyssal-plane: #070135;
+    --adepts-robes: #00b5d1;
+    --eldritch-blast: #0d9c00;
+    --fireball: #ff3102;
+  }
+  
+
+  body {
+    
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: medium;
+    color: var(--adepts-robes);
+    background-color: var(--abyssal-plane);
+  }
+section.card{
+    display: flex;
+    color: var(--eldritch-blast);;
+}
+
+section.timer{
+    font-size: 50%;
+    color: var(--fireball);;
+}
