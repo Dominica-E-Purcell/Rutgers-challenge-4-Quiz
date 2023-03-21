@@ -1,7 +1,8 @@
 
 var timeLeft = document.getElementById("countdown");
 var quizElement = document.getElementByClass("#quiz-question")
-var buttonElement = document.getElementByClass("start-quiz")
+var startButtonElement = document.getElementByClass("start-quiz")
+var score = document.querySelector("#score");
 var startTime = 30;
 var quiz = [question1, question2, question3, question4,question5] 
 var score = timeLeft
@@ -21,11 +22,11 @@ function setTimer() {
       clearInterval(timerInterval);
     }
   }, 1000);
-console.log(timeLeft);
+  localStorage.setItem("score", score);
+  renderLastRegistered();
 }
 
-function quizQuestion(event) {
-    onclick.event
+function quizQuestion.addEventListener("click", function(event) {
 var question1 =  {
     prompt: "Which School of Magic has the least amount of cantrips",
         a: "Illusion", 
